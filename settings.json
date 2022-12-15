@@ -1,0 +1,78 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+
+  "SimMode": "Multirotor",
+
+  "ClockType": "SteppableClock",
+  "ClockSpeed": 10,
+
+  "Vehicles": {
+    "Drone1": {
+      "VehicleType": "simpleflight",
+      "AutoCreate": true,
+      "Sensors": {
+        "LidarSensor_Front": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 16,
+          "RotationsPerSecond": 10,
+          "PointsPerSecond": 100000,
+          "range": 5,
+          "X": 0,
+          "Y": 0,
+          "Z": 0,
+          "Roll": 0,
+          "Pitch": 0,
+          "Yaw": 0,
+          "VerticalFOVUpper": -15,
+          "VerticalFOVLower": 0,
+          "HorizontalFOVStart": -90,
+          "HorizontalFOVEnd": 90,
+          "DrawDebugPoints": true,
+          "DataFrame": "SensorLocalFrame"
+        },
+        "LidarSensor_Ground": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 4,
+          "RotationsPerSecond": 10,
+          "PointsPerSecond": 100000,
+          "range": 5,
+          "X": 0,
+          "Y": 0,
+          "Z": 0,
+          "Roll": 0,
+          "Pitch": -90,
+          "Yaw": 0,
+          "VerticalFOVUpper": -15,
+          "VerticalFOVLower": 15,
+          "HorizontalFOVStart": -15,
+          "HorizontalFOVEnd": 15,
+          "DrawDebugPoints": true,
+          "DataFrame": "SensorLocalFrame"
+        },
+        "LidarSensor_Up": {
+          "SensorType": 6,
+          "Enabled": true,
+          "NumberOfChannels": 4,
+          "RotationsPerSecond": 10,
+          "PointsPerSecond": 100000,
+          "range": 5,
+          "X": 0,
+          "Y": 0,
+          "Z": 0,
+          "Roll": 0,
+          "Pitch": 90,
+          "Yaw": 0,
+          "VerticalFOVUpper": -15,
+          "VerticalFOVLower": 15,
+          "HorizontalFOVStart": -15,
+          "HorizontalFOVEnd": 15,
+          "DrawDebugPoints": true,
+          "DataFrame": "SensorLocalFrame"
+        }
+      }
+    }
+  }
+}
